@@ -1,13 +1,14 @@
 import Link from "next/link";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
+import NavItems from "./NavItems";
 
 const Navbar = () => {
   return (
     <header className="bg-background">
       <MaxWidthWrapper>
         <div className="border-b border-secondary">
-          <div className="flex h-16 items-center">
+          <section className="flex h-16 items-center justify-between">
             {/* //TODO: Add mobile nav here */}
             <div className="ml-4 flex lg:ml-0">
               <Link
@@ -20,10 +21,10 @@ const Navbar = () => {
                 Niloy Das
               </Link>
             </div>
-            <div className="z-50 hidden lg:ml-8 lg:block lg:self-stretch">
-              {/* <NavItems /> */}
+            <div className="">
+              <NavItems />
             </div>
-          </div>
+          </section>
         </div>
       </MaxWidthWrapper>
     </header>
