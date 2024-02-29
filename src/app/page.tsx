@@ -7,14 +7,13 @@ export default function Home() {
       {/* Radial gradient for the container to give a faded look */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_40%,black)]"></div>
       {/* Hero text generate effect */}
-      <MaxWidthWrapper>
-        <div className="absolute flex flex-col gap-7">
-          <TextGenerateEffect words="Hi, my name is niloy... ANd fucko you" />
-          <TextGenerateEffect
-            stag={0.5}
-            duration={3}
-            words="This is the stagger and duration time delay for the second time..."
-          />
+      <MaxWidthWrapper className="absolute">
+        <div className="grid h-[50dvh] place-items-center mt-5 lg:mt-0">
+          <div className="space-y-5">
+            <h5 className="text-xl">Hi, 👋</h5>
+            <h3 className="text-6xl leading-snug">My Name is Niloy</h3>
+            <h3 className="text-2xl text-muted-foreground">I build pixel perfect web interactions</h3>
+          </div>
         </div>
       </MaxWidthWrapper>
     </div>
